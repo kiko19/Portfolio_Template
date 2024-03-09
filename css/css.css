@@ -1,0 +1,113 @@
+:root{
+--mainColor:brown;
+}
+.text-main{
+    color: var(--mainColor)!important;
+    font-size: 1.1rem;
+}
+#home{
+    background-image: url(../images/bg.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.icons{
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgba(255,255 , 255, 0.4);
+}
+#about{
+    background-image: url(../images/light_dot.jpeg);
+
+}
+.titles h2
+{
+font-size: 5rem;
+font-weight: 900;
+color: rgb(232, 229, 229);
+}
+.titles h3
+{
+    position: absolute;
+font-size: 2rem;
+font-weight: 900;
+
+}
+#about a{
+    color: black;
+}
+#services{
+    background-image: url(../images/dark_dot.jpeg);
+}
+#services h2
+{
+    font-weight: 900;
+color: rgb(26, 43, 43);
+letter-spacing: 10px;
+}
+#services h3{letter-spacing: 2px;
+text-align: center;
+position: relative;
+padding-bottom: 1rem;
+}
+#services p{
+    color: var(--mainColor);
+}
+#services .container h3::after {
+content: "";
+position: absolute;
+width: 15%;
+height: 2px;
+bottom: 0;
+background-color:var(--mainColor);
+left: 45%;
+transition: 1s;}
+
+#services .container .items:hover h3::after{
+    left: 40%;
+    width: 25%;
+}
+#services .container i{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width:50px;
+    height: 50px;
+   left: 50%;
+   border: 10px solid white;
+   transition: 1s;
+}
+#services .container .items:hover i{
+    color: var(--mainColor)!important;
+}
+#portfolio p{
+    color: var(--mainColor);
+}
+
+#portfolio .nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
+    background-color: transparent;
+    color: var(--mainColor);
+}
+#portfolio .portfolio-caption{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background-color: #ffffffcc;
+    bottom:100%;
+flex-direction: column;
+transition: 1s;
+
+}
+#portfolio .portfolio-item{overflow: hidden;}
+#portfolio .c1 :hover .portfolio-caption{
+  bottom: 5%;
+}
+#slider img{
+    width: 8%;
+    
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+
+}
